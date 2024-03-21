@@ -1,0 +1,119 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+    color: #4A4A4A; /* A softer color for text, instead of pure black */
+    background-color: #f4f4f0
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-header {
+  background-color: #6d9eeb; /* The blue color you provided */
+  padding: 20px; /* Increased padding makes the bar thicker */
+  text-align: center;
+  color: white;
+}
+
+.logos {
+  display: flex; /* This will place all child elements side by side */
+  justify-content: center; /* This will center the logos horizontally */
+  align-items: center; /* This will align the logos vertically */
+}
+
+.logo {
+  height: auto; /* Maintain the aspect ratio */
+  max-height: 50px; /* Adjust the size as needed */
+  margin-right: 20px; /* Adds space between the logos */
+}
+
+.logo:last-child {
+  margin-right: 0; /* Removes the margin from the last logo */
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  background: #f0f0f0;
+  overflow-y: auto;
+}
+
+.chat-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.chat-footer input {
+    flex: 1; /* Allows the input to expand */
+    max-width: 500px; /* Maximum width of the input */
+    padding: 15px 600px; /* Increased padding for larger box */
+    margin-right: 10px; /* Spacing between input and button */
+    border: 2px solid #ccc; /* Thicker border */
+    border-radius: 25px; /* Slightly more rounded corners */
+    font-size: 18px; /* Larger font size */
+}
+
+.chat-footer button {
+    padding: 15px 25px; /* Increased padding for a larger button */
+    background-color: #4a90e2; /* Color of the button */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Slightly more rounded corners */
+    cursor: pointer;
+    font-size: 18px; /* Larger font size */
+}
+
+
+.logo {
+  height: auto; /* Maintain the aspect ratio */
+  width: auto; /* You can set a specific width if needed */
+  max-height: 100px; /* Adjust the size as needed */
+  max-width: 150%; /* This ensures the image is not bigger than its container */
+}
+
+
+.chat-message {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #4A4A4A;
+    font-family: Verdana, sans-serif;
+}
+
+.user {
+    background-color: #e6e6e6;
+    text-align: right;
+}
+
+.bot {
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+.chat-message.user, .chat-message.bot {
+    display: flex;
+    align-items: center;
+}
+
+.chat-message.user {
+    justify-content: flex-end;
+}
+
+.chat-message.bot {
+    justify-content: flex-start;
+}
+
+.chat-icon {
+    height: 40px; /* Adjust as needed */
+    width: 40px; /* Adjust as needed */
+    margin: 0 10px; /* Space around the icon */
+}
+
+

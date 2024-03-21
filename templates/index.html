@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="kpmg-favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KPMG Chat Interface - a custom chat interface with KPMG branding" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>KPMG Chat Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="logos">
+        <!-- Replace with actual path to your logos -->
+        <img src="{{ url_for('static', filename='kpmglogo.png') }}" alt="KPMG Logo" class="logo">
+        <img src="{{ url_for('static', filename='qmsslogo.png') }}" alt="QMSS Logo" class="logo">
+      </div>
+    </div>
+    <div class="chat-box" id="chatBox">
+      <!-- Messages will be displayed here -->
+    </div>
+      <div id="predictionOutput" class="prediction-output"></div>
+    <div class="chat-footer">
+      <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Type your message here...">
+    <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+    <script type="text/javascript">
+        var staticBaseUrl = "{{ url_for('static', filename='') }}";
+    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
